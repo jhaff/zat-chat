@@ -17,6 +17,8 @@
 		3591FF8524A2A78800F2CB3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3591FF8424A2A78800F2CB3B /* Main.storyboard */; };
 		3591FF8724A2A7A300F2CB3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3591FF8624A2A7A200F2CB3B /* Assets.xcassets */; };
 		3591FF8B24A3BCD800F2CB3B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3591FF8A24A3BCD800F2CB3B /* GoogleService-Info.plist */; };
+		35AE1CCE24A3D3AC009BE439 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AE1CCD24A3D3AC009BE439 /* Constants.swift */; };
+		35AE1CD024A3DAAB009BE439 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AE1CCF24A3DAAB009BE439 /* Message.swift */; };
 		DCEDFC069B57EA161AE22FAD /* Pods_zat_chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCF585EAF28118547AED18AF /* Pods_zat_chat.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +35,8 @@
 		3591FF8424A2A78800F2CB3B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3591FF8624A2A7A200F2CB3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../Downloads/Flash-Chat-iOS13-master/Flash Chat iOS13/Assets.xcassets"; sourceTree = "<group>"; };
 		3591FF8A24A3BCD800F2CB3B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		35AE1CCD24A3D3AC009BE439 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = "zat-chat/Constants.swift"; sourceTree = SOURCE_ROOT; };
+		35AE1CCF24A3DAAB009BE439 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		76A1CC2DA35480CC0FA295F8 /* Pods-zat-chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zat-chat.release.xcconfig"; path = "Target Support Files/Pods-zat-chat/Pods-zat-chat.release.xcconfig"; sourceTree = "<group>"; };
 		BB91E9EA0DCED435E7D52508 /* Pods-zat-chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zat-chat.debug.xcconfig"; path = "Target Support Files/Pods-zat-chat/Pods-zat-chat.debug.xcconfig"; sourceTree = "<group>"; };
 		CCF585EAF28118547AED18AF /* Pods_zat_chat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zat_chat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +88,7 @@
 				3591FF6724A2A4FC00F2CB3B /* AppDelegate.swift */,
 				3591FF6924A2A4FC00F2CB3B /* SceneDelegate.swift */,
 				3591FF8624A2A7A200F2CB3B /* Assets.xcassets */,
+				35AE1CCD24A3D3AC009BE439 /* Constants.swift */,
 				3591FF8824A2B60F00F2CB3B /* Views */,
 				3591FF7224A2A4FD00F2CB3B /* LaunchScreen.storyboard */,
 				3591FF7B24A2A75500F2CB3B /* Controllers */,
@@ -114,6 +119,7 @@
 		3591FF8924A2B61A00F2CB3B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				35AE1CCF24A3DAAB009BE439 /* Message.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -247,6 +253,8 @@
 				3591FF8324A2A75500F2CB3B /* RegisterViewController.swift in Sources */,
 				3591FF8124A2A75500F2CB3B /* WelcomeViewController.swift in Sources */,
 				3591FF6824A2A4FC00F2CB3B /* AppDelegate.swift in Sources */,
+				35AE1CCE24A3D3AC009BE439 /* Constants.swift in Sources */,
+				35AE1CD024A3DAAB009BE439 /* Message.swift in Sources */,
 				3591FF8024A2A75500F2CB3B /* ChatViewController.swift in Sources */,
 				3591FF6A24A2A4FC00F2CB3B /* SceneDelegate.swift in Sources */,
 			);
