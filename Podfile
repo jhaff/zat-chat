@@ -6,5 +6,7 @@ target 'zat-chat' do
   # Pods for zat-chat
   
   pod 'CLTypingLabel'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
 
 end
