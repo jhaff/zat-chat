@@ -1,0 +1,6 @@
+framework module Pods_zat_chat {
+  umbrella header "Pods-zat-chat-umbrella.h"
+
+  export *
+  module * { export * }
+}

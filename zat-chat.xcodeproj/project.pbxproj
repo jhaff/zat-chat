@@ -16,6 +16,7 @@
 		3591FF8324A2A75500F2CB3B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591FF7F24A2A75500F2CB3B /* RegisterViewController.swift */; };
 		3591FF8524A2A78800F2CB3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3591FF8424A2A78800F2CB3B /* Main.storyboard */; };
 		3591FF8724A2A7A300F2CB3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3591FF8624A2A7A200F2CB3B /* Assets.xcassets */; };
+		DCEDFC069B57EA161AE22FAD /* Pods_zat_chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCF585EAF28118547AED18AF /* Pods_zat_chat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,9 @@
 		3591FF7F24A2A75500F2CB3B /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		3591FF8424A2A78800F2CB3B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3591FF8624A2A7A200F2CB3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../Downloads/Flash-Chat-iOS13-master/Flash Chat iOS13/Assets.xcassets"; sourceTree = "<group>"; };
+		76A1CC2DA35480CC0FA295F8 /* Pods-zat-chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zat-chat.release.xcconfig"; path = "Target Support Files/Pods-zat-chat/Pods-zat-chat.release.xcconfig"; sourceTree = "<group>"; };
+		BB91E9EA0DCED435E7D52508 /* Pods-zat-chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zat-chat.debug.xcconfig"; path = "Target Support Files/Pods-zat-chat/Pods-zat-chat.debug.xcconfig"; sourceTree = "<group>"; };
+		CCF585EAF28118547AED18AF /* Pods_zat_chat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zat_chat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCEDFC069B57EA161AE22FAD /* Pods_zat_chat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3033FE5FA8EA6E5D4B10C417 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCF585EAF28118547AED18AF /* Pods_zat_chat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3591FF5B24A2A4FC00F2CB3B = {
 			isa = PBXGroup;
 			children = (
 				3591FF6624A2A4FC00F2CB3B /* zat-chat */,
 				3591FF6524A2A4FC00F2CB3B /* Products */,
+				90D0C2F2965770D042A81A44 /* Pods */,
+				3033FE5FA8EA6E5D4B10C417 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +115,16 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		90D0C2F2965770D042A81A44 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB91E9EA0DCED435E7D52508 /* Pods-zat-chat.debug.xcconfig */,
+				76A1CC2DA35480CC0FA295F8 /* Pods-zat-chat.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -107,9 +132,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3591FF7824A2A4FD00F2CB3B /* Build configuration list for PBXNativeTarget "zat-chat" */;
 			buildPhases = (
+				39FF378BC2B79918EAEB8D0A /* [CP] Check Pods Manifest.lock */,
 				3591FF6024A2A4FC00F2CB3B /* Sources */,
 				3591FF6124A2A4FC00F2CB3B /* Frameworks */,
 				3591FF6224A2A4FC00F2CB3B /* Resources */,
+				F5B7DEB780162B87FD548817 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -165,6 +192,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39FF378BC2B79918EAEB8D0A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-zat-chat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5B7DEB780162B87FD548817 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-zat-chat/Pods-zat-chat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-zat-chat/Pods-zat-chat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-zat-chat/Pods-zat-chat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3591FF6024A2A4FC00F2CB3B /* Sources */ = {
@@ -310,6 +379,7 @@
 		};
 		3591FF7924A2A4FD00F2CB3B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB91E9EA0DCED435E7D52508 /* Pods-zat-chat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -328,6 +398,7 @@
 		};
 		3591FF7A24A2A4FD00F2CB3B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76A1CC2DA35480CC0FA295F8 /* Pods-zat-chat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
