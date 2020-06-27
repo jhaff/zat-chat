@@ -17,6 +17,10 @@ class MessageCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        label.numberOfLines = 0
+        label.lineBreakMode = .byWordWrapping
+        
 
         messageBubble.layer.cornerRadius = messageBubble.frame.size.height / 5
     }
